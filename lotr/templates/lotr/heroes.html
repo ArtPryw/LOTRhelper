@@ -1,0 +1,9 @@
+{% if heroes_list %}
+    <ul>
+    {% for character in heroes_list %}
+        <li><a href="/detail/{{ character.id }}/">{{ character.name }} -- GRACZ: {{ character.char_id }} </a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No heroes are available.</p>
+{% endif %}
