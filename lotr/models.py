@@ -59,6 +59,7 @@ class Character(models.Model):
     fraction_key = models.ForeignKey(Fraction, on_delete=models.DO_NOTHING)
     class_key = models.ForeignKey(ClassChar, on_delete=models.DO_NOTHING)
     name = models.CharField(max_length=40)
+    #do wyjebki class name
     class_name = models.CharField(max_length=50)
     fraction_name = models.CharField(max_length=50)
 
